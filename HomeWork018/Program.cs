@@ -13,12 +13,12 @@ double b2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите число k2");
 double k2 = Convert.ToDouble(Console.ReadLine());
 
-//void FindPoint(double x, double y)
-//{
+void FindPoint()
+{
     double x = 1;
     double y = 1;
 
-    if(b1 == b2)
+    if(b1 == b2 && k1 != k2)
     {
         Console.WriteLine("Прямые параллельны!");
     }
@@ -30,17 +30,9 @@ double k2 = Convert.ToDouble(Console.ReadLine());
     {
         x = (b2 - b1)/(k1 - k2);           
         y = (k2 * x + b2);       // y = k1 * x + b1, y = k2 * x + b2; 
+        Console.WriteLine($"Две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
     }
-    Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
-//}
+        
+}
 
-// void PrintArray(double x, double y) 
-// {
-//       {
-//          Console.Write("Ваш массив: ");
-//          //Console.WriteLine(String.Join(", ", numbers));
-//       }
-// }
-
-// FindPoint("X: {x}, Y: {y}");
-// PrintArray();
+FindPoint();
