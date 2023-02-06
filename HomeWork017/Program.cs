@@ -5,8 +5,8 @@
 
 Console.WriteLine("Введите массив целых чисел через пробел: ");
 string input = Console.ReadLine()!;
-string[] numberStrings = input.Split(" "); // лежит массив строк, который нужно распарсить
-int[] numbers = new int[numberStrings.Length]; // создаем новый массив, который по размерности равен тому что получилось распарсить
+string [] numberStrings = input.Split(" "); // лежит массив строк, который нужно распарсить
+int [] numbers = new int[numberStrings.Length]; // создаем новый массив, который по размерности равен тому что получилось распарсить
 
 void FindPositiveNumber(int [] number){
 
@@ -26,7 +26,6 @@ Console.WriteLine($"Кол-во элементов > 0: {count}");
 
 }
     
-
 void PrintArray(int [] numbers) 
 {
      {
